@@ -1,0 +1,193 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body{
+    background: #0f172a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.c1{
+    width: 300px;
+    height: 300px;
+    background: #7f00ff;
+    filter: blur(80px);
+    border-radius: 50%;
+    opacity: 0.6;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    
+}
+
+
+
+.c2{
+    width: 300px;
+    height: 300px;
+    background: #00d2ff;
+    filter: blur(80px);
+    border-radius: 50%;
+    opacity: 0.6;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+}
+
+
+.conatainer{
+    margin: 0 20px 0 20px;
+    height: 450px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+
+.head-line{
+    text-align: center;
+    color: white;
+    margin-top: 35px;
+}
+
+
+.head-line span{
+    background: linear-gradient(to right, #00d2ff, #9d50bb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.triple{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 72%;
+    transform: translate(-50%);
+}
+
+
+.o{
+    width: 90px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.041);
+    backdrop-filter: blur(1px);
+    /* border: 1px solid rgba(255, 255, 255, 0.09); */
+    margin: 0 10px;
+    border-radius: 10px;
+
+       box-shadow:
+        inset 0 2px 6px rgba(255,255,255,0.4),
+        inset 0 -4px 10px rgba(0,0,0,0.2),       
+        0 10px 30px rgba(0,0,0,0.25),           
+        0 0 25px rgba(255,255,255,0.25); 
+}
+
+
+.o {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+.o .years{
+    color: #00d2ff;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.o .month{
+    position: absolute;
+    bottom: 8px;
+    font-size: 12px;
+    color: #B6B6B6;
+    font-weight: 600;
+}
+
+
+.input-headline{
+    font-weight: 500;
+    font-size: 12px;
+    color: #B6B6B6;
+    margin: 40px 0 5px 38px;
+
+}
+
+
+#date-input{
+    display: block;
+    width: 80%;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    outline: none;
+    background-color: #0f172a65;
+    color: #FFFFFF;
+    border-radius: 6px;
+    box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 4px 0px,
+            rgba(255, 255, 255, 0.2) 0px 2px 16px 0px;
+            border: 1px solid #b6b6b642;
+            font-size: 11px;
+            font-weight: 400;
+            padding: 0 10px;
+            
+}
+
+
+#date-input[type="date"] {
+    color-scheme: dark;
+    color: white;
+}
+
+
+#btn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 44%;
+    width: 80%;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    color: #FFFFFF;
+    font-weight: 600;
+    
+    
+}
+
+.total-age{
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    text-transform: capitalize;
+    white-space: nowrap;
+    
+}
